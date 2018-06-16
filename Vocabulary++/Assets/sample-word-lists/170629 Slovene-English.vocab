@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Language0>Slovenian</Language0>
+  <Language1>English</Language1>
+  <Wordlist>
+    <Word>
+      <Language0>s strankami</Language0>
+      <Language1>with customers</Language1>
+    </Word>
+    <Word>
+      <Language0>ena stranka</Language0>
+      <Language1>a customer, a political party</Language1>
+    </Word>
+    <Word>
+      <Language0>tri stranke</Language0>
+      <Language1>three customers</Language1>
+    </Word>
+    <Word>
+      <Language0>zaposlitev tujcev</Language0>
+      <Language1>employment of foreigners</Language1>
+    </Word>
+    <Word>
+      <Language0>delovnih izkušenj</Language0>
+      <Language1>work experience</Language1>
+    </Word>
+    <Word>
+      <Language0>delovno mesto</Language0>
+      <Language1>work place</Language1>
+    </Word>
+    <Word>
+      <Language0>glagol</Language0>
+      <Language1>verb</Language1>
+    </Word>
+    <Word>
+      <Language0>količina</Language0>
+      <Language1>quantity</Language1>
+    </Word>
+    <Word>
+      <Language0>izrazi</Language0>
+      <Language1>expressions</Language1>
+    </Word>
+    <Word>
+      <Language0>pogojnik</Language0>
+      <Language1>conditional</Language1>
+    </Word>
+    <Word>
+      <Language0>mir</Language0>
+      <Language1>peace</Language1>
+    </Word>
+    <Word>
+      <Language0>predavati</Language0>
+      <Language1>to teach</Language1>
+    </Word>
+    <Word>
+      <Language0>svetujati</Language0>
+      <Language1>to advice</Language1>
+    </Word>
+    <Word>
+      <Language0>pravljice</Language0>
+      <Language1>fairy tales</Language1>
+    </Word>
+    <Word>
+      <Language0>poročilo</Language0>
+      <Language1>report</Language1>
+    </Word>
+    <Word>
+      <Language0>sestanek</Language0>
+      <Language1>meeting</Language1>
+    </Word>
+    <Word>
+      <Language0>podjetje</Language0>
+      <Language1>company</Language1>
+    </Word>
+    <Word>
+      <Language0>graditi</Language0>
+      <Language1>to build</Language1>
+    </Word>
+    <Word>
+      <Language0>moj delovnik traja</Language0>
+      <Language1>my workday lasts</Language1>
+    </Word>
+    <Word>
+      <Language0>zaposlen sem</Language0>
+      <Language1>I am employed</Language1>
+    </Word>
+    <Word>
+      <Language0>naporno, težko</Language0>
+      <Language1>difficult, exhausting</Language1>
+    </Word>
+    <Word>
+      <Language0>nevarno</Language0>
+      <Language1>dangerous</Language1>
+    </Word>
+    <Word>
+      <Language0>precej</Language0>
+      <Language1>a lot of, but not too much</Language1>
+    </Word>
+    <Word>
+      <Language0>kmalu</Language0>
+      <Language1>soon</Language1>
+    </Word>
+    <Word>
+      <Language0>upokojenka</Language0>
+      <Language1>female pensioner</Language1>
+    </Word>
+    <Word>
+      <Language0>vzgojitelica</Language0>
+      <Language1>female preschool teacher</Language1>
+    </Word>
+    <Word>
+      <Language0>odgovorno</Language0>
+      <Language1>responsable</Language1>
+    </Word>
+    <Word>
+      <Language0>vzgajati</Language0>
+      <Language1>to raise something (e.g. kids/dogs/flowers)</Language1>
+    </Word>
+    <Word>
+      <Language0>pripravljati</Language0>
+      <Language1>to prepare (e.g. for work)</Language1>
+    </Word>
+    <Word>
+      <Language0>zapisnik</Language0>
+      <Language1>report</Language1>
+    </Word>
+    <Word>
+      <Language0>sprejemati</Language0>
+      <Language1>to accept</Language1>
+    </Word>
+    <Word>
+      <Language0>zaposlen</Language0>
+      <Language1>busy, employed</Language1>
+    </Word>
+    <Word>
+      <Language0>določen čas</Language0>
+      <Language1>limited period</Language1>
+    </Word>
+    <Word>
+      <Language0>zadovolj</Language0>
+      <Language1>satisfied</Language1>
+    </Word>
+    <Word>
+      <Language0>odpovedan</Language0>
+      <Language1>cancelled</Language1>
+    </Word>
+    <Word>
+      <Language0>prestavljen</Language0>
+      <Language1>postponed</Language1>
+    </Word>
+    <Word>
+      <Language0>tajništva</Language0>
+      <Language1>administration</Language1>
+    </Word>
+    <Word>
+      <Language0>najbrž</Language0>
+      <Language1>probably</Language1>
+    </Word>
+    <Word>
+      <Language0>napisati finančno poročilo</Language0>
+      <Language1>to write the financial report</Language1>
+    </Word>
+    <Word>
+      <Language0>na konferencu v Berlin</Language0>
+      <Language1>to a conference in Berlin</Language1>
+    </Word>
+    <Word>
+      <Language0>predstavitev</Language0>
+      <Language1>presentation</Language1>
+    </Word>
+    <Word>
+      <Language0>vedno lahko najdeš nekaj</Language0>
+      <Language1>you can always find something</Language1>
+    </Word>
+    <Word>
+      <Language0>je berlivo</Language0>
+      <Language1>it's readable</Language1>
+    </Word>
+    <Word>
+      <Language0>prevajalska agencija</Language0>
+      <Language1>translation agency</Language1>
+    </Word>
+    <Word>
+      <Language0>prevajati</Language0>
+      <Language1>to translate</Language1>
+    </Word>
+    <Word>
+      <Language0>dolg</Language0>
+      <Language1>debt, long</Language1>
+    </Word>
+    <Word>
+      <Language0>sami</Language0>
+      <Language1>by themselves</Language1>
+    </Word>
+    <Word>
+      <Language0>sam</Language0>
+      <Language1>alone</Language1>
+    </Word>
+    <Word>
+      <Language0>kasneje</Language0>
+      <Language1>later</Language1>
+    </Word>
+    <Word>
+      <Language0>predvsem</Language0>
+      <Language1>above all</Language1>
+    </Word>
+    <Word>
+      <Language0>prenizek</Language0>
+      <Language1>too low</Language1>
+    </Word>
+    <Word>
+      <Language0>člani</Language0>
+      <Language1>members</Language1>
+    </Word>
+    <Word>
+      <Language0>podatki</Language0>
+      <Language1>data</Language1>
+    </Word>
+    <Word>
+      <Language0>narediti</Language0>
+      <Language1>to do</Language1>
+    </Word>
+    <Word>
+      <Language0>zaposlitev</Language0>
+      <Language1>employment</Language1>
+    </Word>
+    <Word>
+      <Language0>začeti</Language0>
+      <Language1>to start</Language1>
+    </Word>
+    <Word>
+      <Language0>načrt</Language0>
+      <Language1>the plan</Language1>
+    </Word>
+    <Word>
+      <Language0>ni treba</Language0>
+      <Language1>unnecessary, not needed</Language1>
+    </Word>
+    <Word>
+      <Language0>pisarna</Language0>
+      <Language1>office</Language1>
+    </Word>
+    <Word>
+      <Language0>smeško</Language0>
+      <Language1>smiley</Language1>
+    </Word>
+    <Word>
+      <Language0>čisto nič</Language0>
+      <Language1>absolutely nothing</Language1>
+    </Word>
+    <Word>
+      <Language0>praviti, govoriti</Language0>
+      <Language1>to tell, to talk</Language1>
+    </Word>
+    <Word>
+      <Language0>član</Language0>
+      <Language1>member</Language1>
+    </Word>
+    <Word>
+      <Language0>smeti</Language0>
+      <Language1>to allow</Language1>
+    </Word>
+    <Word>
+      <Language0>podpisati</Language0>
+      <Language1>to sign</Language1>
+    </Word>
+    <Word>
+      <Language0>pogodbo</Language0>
+      <Language1>contract</Language1>
+    </Word>
+    <Word>
+      <Language0>delodajalec</Language0>
+      <Language1>employer</Language1>
+    </Word>
+    <Word>
+      <Language0>morati</Language0>
+      <Language1>to be obliged to</Language1>
+    </Word>
+    <Word>
+      <Language0>urediti</Language0>
+      <Language1>to take care of</Language1>
+    </Word>
+    <Word>
+      <Language0>razgovor za službo</Language0>
+      <Language1>job interview</Language1>
+    </Word>
+    <Word>
+      <Language0>vrednica</Language0>
+      <Language1>female editor</Language1>
+    </Word>
+    <Word>
+      <Language0>uspešno</Language0>
+      <Language1>successful</Language1>
+    </Word>
+    <Word>
+      <Language0>uradno</Language0>
+      <Language1>official</Language1>
+    </Word>
+    <Word>
+      <Language0>dopis, pismo</Language0>
+      <Language1>letter</Language1>
+    </Word>
+    <Word>
+      <Language0>priprava</Language0>
+      <Language1>preparation</Language1>
+    </Word>
+    <Word>
+      <Language0>izobrazba</Language0>
+      <Language1>degree</Language1>
+    </Word>
+    <Word>
+      <Language0>dogodek</Language0>
+      <Language1>event</Language1>
+    </Word>
+    <Word>
+      <Language0>nudimo</Language0>
+      <Language1>we offer</Language1>
+    </Word>
+    <Word>
+      <Language0>ponudba</Language0>
+      <Language1>an offer</Language1>
+    </Word>
+    <Word>
+      <Language0>pogoji</Language0>
+      <Language1>conditions</Language1>
+    </Word>
+    <Word>
+      <Language0>zaposlitev za nedoločen čas</Language0>
+      <Language1>contract for undetermined time</Language1>
+    </Word>
+    <Word>
+      <Language0>prenosni računalnik, prenosnik</Language0>
+      <Language1>laptop</Language1>
+    </Word>
+    <Word>
+      <Language0>iskati</Language0>
+      <Language1>to search (longer time)</Language1>
+    </Word>
+    <Word>
+      <Language0>tiskalnik</Language0>
+      <Language1>printer</Language1>
+    </Word>
+    <Word>
+      <Language0>leteti</Language0>
+      <Language1>to fly</Language1>
+    </Word>
+    <Word>
+      <Language0>poiskati</Language0>
+      <Language1>to search (shorter time)</Language1>
+    </Word>
+    <Word>
+      <Language0>omrežje</Language0>
+      <Language1>a network</Language1>
+    </Word>
+    <Word>
+      <Language0>izražanje mnenja</Language0>
+      <Language1>expressing opinion</Language1>
+    </Word>
+  </Wordlist>
+  <Randomize>false</Randomize>
+  <Question0to1>false</Question0to1>
+</Dictionary>

@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<Dictionary xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Language0>Slovene</Language0>
+  <Language1>English</Language1>
+  <Wordlist>
+    <Word>
+      <Language0>morski prasicek</Language0>
+      <Language1>Cavia</Language1>
+    </Word>
+    <Word>
+      <Language0>hrcek</Language0>
+      <Language1>hamster</Language1>
+    </Word>
+    <Word>
+      <Language0>narcisa</Language0>
+      <Language1>Narcissus </Language1>
+    </Word>
+    <Word>
+      <Language0>losos</Language0>
+      <Language1>salmon</Language1>
+    </Word>
+    <Word>
+      <Language0>mak</Language0>
+      <Language1>poppy</Language1>
+    </Word>
+    <Word>
+      <Language0>marjetica</Language0>
+      <Language1>Daisy</Language1>
+    </Word>
+    <Word>
+      <Language0>veverica</Language0>
+      <Language1>squirrel</Language1>
+    </Word>
+    <Word>
+      <Language0>ribja restavracija</Language0>
+      <Language1>fish restaurant</Language1>
+    </Word>
+    <Word>
+      <Language0>oba</Language0>
+      <Language1>both</Language1>
+    </Word>
+    <Word>
+      <Language0>teza</Language0>
+      <Language1>weight</Language1>
+    </Word>
+    <Word>
+      <Language0>slabsalna</Language0>
+      <Language1>popular, vulgar words</Language1>
+    </Word>
+    <Word>
+      <Language0>sredina</Language0>
+      <Language1>center</Language1>
+    </Word>
+    <Word>
+      <Language0>dvojna negacija</Language0>
+      <Language1>double negation</Language1>
+    </Word>
+    <Word>
+      <Language0>kumar</Language0>
+      <Language1>mosquito</Language1>
+    </Word>
+    <Word>
+      <Language0>molj</Language0>
+      <Language1>moth</Language1>
+    </Word>
+    <Word>
+      <Language0>seliti se</Language0>
+      <Language1>to move (from flat to flat)</Language1>
+    </Word>
+    <Word>
+      <Language0>izkusnja</Language0>
+      <Language1>experience</Language1>
+    </Word>
+    <Word>
+      <Language0>prevajalka</Language0>
+      <Language1>translator (f.)</Language1>
+    </Word>
+    <Word>
+      <Language0>odvisno</Language0>
+      <Language1>it depends</Language1>
+    </Word>
+    <Word>
+      <Language0>nasvet</Language0>
+      <Language1>advice</Language1>
+    </Word>
+    <Word>
+      <Language0>svetovati</Language0>
+      <Language1>to advise</Language1>
+    </Word>
+    <Word>
+      <Language0>geografija</Language0>
+      <Language1>geography (secondary school subject)</Language1>
+    </Word>
+    <Word>
+      <Language0>zemljepis</Language0>
+      <Language1>geography (primary school subject)</Language1>
+    </Word>
+    <Word>
+      <Language0>zemjevid</Language0>
+      <Language1>map</Language1>
+    </Word>
+    <Word>
+      <Language0>avtomobilske karta istrije</Language0>
+      <Language1>road map of Istria</Language1>
+    </Word>
+    <Word>
+      <Language0>z otroki je kriz</Language0>
+      <Language1>It's difficult with children (proverb)</Language1>
+    </Word>
+    <Word>
+      <Language0>izjema</Language0>
+      <Language1>exception</Language1>
+    </Word>
+    <Word>
+      <Language0>izjemna</Language0>
+      <Language1>exceptional</Language1>
+    </Word>
+    <Word>
+      <Language0>ogromno Slovencev</Language0>
+      <Language1>an enormous amount of Slovenians</Language1>
+    </Word>
+    <Word>
+      <Language0>zamenjati</Language0>
+      <Language1>replace (and the "old" is disappearing)</Language1>
+    </Word>
+    <Word>
+      <Language0>spremeniti</Language0>
+      <Language1>change (but the "old" exists still)</Language1>
+    </Word>
+    <Word>
+      <Language0>nervozen, zivcen</Language0>
+      <Language1>nervous</Language1>
+    </Word>
+    <Word>
+      <Language0>nadaljevati</Language0>
+      <Language1>to continue</Language1>
+    </Word>
+    <Word>
+      <Language0>smejati</Language0>
+      <Language1>to joke, kidding</Language1>
+    </Word>
+    <Word>
+      <Language0>smesno</Language0>
+      <Language1>funny</Language1>
+    </Word>
+    <Word>
+      <Language0>zivljenjepis</Language0>
+      <Language1>resume, cv</Language1>
+    </Word>
+    <Word>
+      <Language0>izobrazbo</Language0>
+      <Language1>education</Language1>
+    </Word>
+    <Word>
+      <Language0>popraviti</Language0>
+      <Language1>to fix</Language1>
+    </Word>
+    <Word>
+      <Language0>ponoviti</Language0>
+      <Language1>to repeat</Language1>
+    </Word>
+    <Word>
+      <Language0>nesmem</Language0>
+      <Language1>I'm not joking</Language1>
+    </Word>
+    <Word>
+      <Language0>stresno</Language0>
+      <Language1>stressy</Language1>
+    </Word>
+    <Word>
+      <Language0>pravzaprav</Language0>
+      <Language1>actually</Language1>
+    </Word>
+    <Word>
+      <Language0>mnenje</Language0>
+      <Language1>opinion</Language1>
+    </Word>
+    <Word>
+      <Language0>dostop</Language0>
+      <Language1>access</Language1>
+    </Word>
+    <Word>
+      <Language0>napaka</Language0>
+      <Language1>error</Language1>
+    </Word>
+    <Word>
+      <Language0>resitev</Language0>
+      <Language1>solution</Language1>
+    </Word>
+    <Word>
+      <Language0>klepetati</Language0>
+      <Language1>to chat</Language1>
+    </Word>
+    <Word>
+      <Language0>splet</Language0>
+      <Language1>web (i.e. internet)</Language1>
+    </Word>
+    <Word>
+      <Language0>mreza</Language0>
+      <Language1>web (spider)</Language1>
+    </Word>
+    <Word>
+      <Language0>pajk</Language0>
+      <Language1>spider</Language1>
+    </Word>
+    <Word>
+      <Language0>zavpati</Language0>
+      <Language1>to trust</Language1>
+    </Word>
+    <Word>
+      <Language0>sleditit</Language0>
+      <Language1>to follow</Language1>
+    </Word>
+    <Word>
+      <Language0>besedilo</Language0>
+      <Language1>text</Language1>
+    </Word>
+    <Word>
+      <Language0>oz./oziroma</Language0>
+      <Language1>or (filler word, elaboration)</Language1>
+    </Word>
+    <Word>
+      <Language0>torej</Language0>
+      <Language1>so (also used as filler word)</Language1>
+    </Word>
+    <Word>
+      <Language0>pometen telefon</Language0>
+      <Language1>mobile phone</Language1>
+    </Word>
+    <Word>
+      <Language0>polovica</Language0>
+      <Language1>half</Language1>
+    </Word>
+    <Word>
+      <Language0>ctrtina</Language0>
+      <Language1>a quarter</Language1>
+    </Word>
+    <Word>
+      <Language0>tretina</Language0>
+      <Language1>a third</Language1>
+    </Word>
+    <Word>
+      <Language0>celota</Language0>
+      <Language1>full, entire</Language1>
+    </Word>
+    <Word>
+      <Language0>petina</Language0>
+      <Language1>a fifth</Language1>
+    </Word>
+    <Word>
+      <Language0>sestina</Language0>
+      <Language1>a sixth</Language1>
+    </Word>
+    <Word>
+      <Language0>sedmina</Language0>
+      <Language1>a seventh, also the evening meal seven days after a death</Language1>
+    </Word>
+    <Word>
+      <Language0>osmina</Language0>
+      <Language1>an eighth</Language1>
+    </Word>
+    <Word>
+      <Language0>delez</Language0>
+      <Language1>divide</Language1>
+    </Word>
+    <Word>
+      <Language0>na podloga</Language0>
+      <Language1>on the basis of, on the surface</Language1>
+    </Word>
+    <Word>
+      <Language0>povsod je lepo</Language0>
+      <Language1>everywhere is nice</Language1>
+    </Word>
+    <Word>
+      <Language0>na zacetku</Language0>
+      <Language1>previously</Language1>
+    </Word>
+    <Word>
+      <Language0>pasliv</Language0>
+      <Language1>careful</Language1>
+    </Word>
+    <Word>
+      <Language0>podracje</Language0>
+      <Language1>subject</Language1>
+    </Word>
+    <Word>
+      <Language0>pomembno</Language0>
+      <Language1>important</Language1>
+    </Word>
+    <Word>
+      <Language0>ravnotezja</Language0>
+      <Language1>balance</Language1>
+    </Word>
+    <Word>
+      <Language0>ostali</Language0>
+      <Language1>others</Language1>
+    </Word>
+  </Wordlist>
+  <Randomize>false</Randomize>
+  <Question0to1>true</Question0to1>
+</Dictionary>

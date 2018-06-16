@@ -1,0 +1,10 @@
+﻿<Window x:Class="Vocabulary.WindowAbout"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="164.662" Width="427" ResizeMode="NoResize" Loaded="HelpWindow_Loaded" Icon="Assets/img/favicon.ico" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,0" KeyDown="HelpWindow_KeyDown" MouseDown="HelpWindow_MouseDown">
+        <TextBlock x:Name="tbDescription" TextWrapping="WrapWithOverflow" Margin="10,10,10,0" Height="55" VerticalAlignment="Top" FontFamily="Segoe UI"/>
+        <TextBlock x:Name="tbVersion" Margin="10,89,10,0" Height="15" VerticalAlignment="Top" FontFamily="Segoe UI"/>
+        <TextBlock x:Name="tbCopyright" Margin="10,104,10,0" Height="23" VerticalAlignment="Top" FontFamily="Segoe UI"/>
+        <TextBlock Margin="10,58,10,0" Height="19" VerticalAlignment="Top" Text="Extra vocabulary lists can be downloaded from www.barbez.eu."  KeyDown="TextBlock_KeyDown" MouseDown="TextBlock_MouseDown" FontFamily="Segoe UI" Cursor="Hand" />
+    </Grid>
+</Window>

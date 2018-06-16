@@ -1,0 +1,89 @@
+﻿<Window MinHeight="512" MinWidth="550" Height="512" Width="1024" x:Class="Vocabulary.WindowMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vocabulary++" Icon="Assets/img/logo_darker_big_01_256px.ico" WindowStartupLocation="CenterScreen" Closing="TukajWindow_Closing">
+    <Window.CommandBindings>
+        <CommandBinding Command="New" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Open" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="SaveAs" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Help" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding CanExecute="CommonCommandBinding_CanExecute" />
+    </Window.CommandBindings>
+    <Grid Background="#FFE5E5E5">
+        <DockPanel>
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar ToolBarTray.IsLocked="True">
+                    <Button Command="New" ToolTip="Create new file..." VerticalAlignment="Bottom" Click="BtnNew_Click">
+                        <Image x:Name="btnNew" Source="Assets/img/new.ico" Height="64" Width="64" />
+                    </Button>
+                    <Button Command="Open" ToolTip="Open file from disk..." Click="BtnOpen_Click">
+                        <Image x:Name="btnOpen" Source="Assets/img/open.ico" Height="64" Width="64" />
+                    </Button>
+                    <Button Command="SaveAs" ToolTip="Save file as..." Click="BtnSaveAs_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="btnSaveAs" Source="Assets/img/save.ico" Height="64" Width="64" />
+                        </StackPanel>
+                    </Button>
+                    <Button ToolTip="Take a new exam/test..." Click="BtnExam_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="btnExam" Source="Assets/img/exam.ico" Height="64" Width="64" />
+                        </StackPanel>
+                    </Button>
+                    <Button Command="Help" ToolTip="About this program..." Click="BtnHelp_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image x:Name="btnHelp" Source="Assets/img/favicon.ico" Height="64" Width="64" />
+                        </StackPanel>
+                    </Button>
+                </ToolBar>
+            </ToolBarTray>
+        </DockPanel>
+        <TabControl x:Name="tcMainWindow" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" DockPanel.Dock="Right" Margin="0,77,0,0" FontFamily="Segoe UI" FontSize="16" Foreground="#FF3B888B">
+            <TabItem x:Name="tiDictionary" Header="Dictionary" Foreground="#FF3B888B">
+                <Grid x:Name="gDictionary">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFEEF5FD" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <DataGrid x:Name="datagrid" AutoGenerateColumns="False" SelectedCellsChanged="Datagrid_SelectedCellsChanged" Margin="10" Grid.ColumnSpan="2" Background="#FFEEF5FD" Foreground="#FF26696C" HorizontalGridLinesBrush="#FF8DD0D3" VerticalGridLinesBrush="#FF8DD0D3" RowBackground="#FFFCFDFF" AlternationCount="1" AlternatingRowBackground="#FFF4F8FE" RowDetailsVisibilityMode="Visible" UseLayoutRounding="False" SnapsToDevicePixels="True" SelectionMode="Single" CanUserSortColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Language0}" />
+                            <DataGridTextColumn Binding="{Binding Language1}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tiExamTest" Header="Taking current exam&#47;Test" Foreground="#FF3B888B" Visibility="Hidden">
+                <Grid x:Name="gExamTest">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFEEF5FD" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Button Background="#FF3B97B9" Foreground="#FFF9FBFE" x:Name="btnNextChallenge" Content="Next question!" Margin="10,10,10,0" Height="30" VerticalAlignment="Top" Click="BtnNextChallenge_Click" IsDefault="True" />
+                    <GroupBox Header="Parameters" Margin="10,45,10,0" Height="91" VerticalAlignment="Top">
+                        <Grid Margin="0,0,0,-12">
+                            <CheckBox Foreground="#FF3B888B" x:Name="cbRandomize" Checked="CbRandomize_Checked" Unchecked="CbRandomize_Unchecked" Margin="0,10,10,0" HorizontalAlignment="Right" Width="99" Height="18" VerticalAlignment="Top">Randomize</CheckBox>
+                            <RadioButton Foreground="#FF3B888B" x:Name="rb0to1" GroupName="rbgnDirection" Margin="10,10,117,0" Height="18" VerticalAlignment="Top"/>
+                            <RadioButton Foreground="#FF3B888B" x:Name="rb1to0" GroupName="rbgnDirection" Margin="10,33,117,0" Height="18" VerticalAlignment="Top"/>
+                            <Button Background="#FF3B97B9" Foreground="#FFF9FBFE" x:Name="btnReset" Content="Reset test" Margin="0,0,10,18" HorizontalAlignment="Right" Width="107" Height="25" VerticalAlignment="Bottom" Click="BtnReset_Click"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Correct answer to the previous challenge:" Margin="10,0,10,10" Height="84" VerticalAlignment="Bottom">
+                        <Grid>
+                            <Label Foreground="#FF3B888B" x:Name="lblPreviousChallenge" FontSize="22" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="10,0" Width="479" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Current challenge:" Margin="10,141,10,99" HorizontalContentAlignment="Center">
+                        <Grid>
+                            <Label Foreground="#FF3B888B" x:Name="lblCurrentChallenge" FontSize="48" Margin="10" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Label Cursor="Hand" x:Name="lblAbout" Content="Rate this app." HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Foreground="#8DD0D3" FontSize="12" FontFamily="Segoe UI" MouseDown="LblAbout_MouseDown" TouchDown="LblAbout_MouseDown" />
+    </Grid>
+</Window>
