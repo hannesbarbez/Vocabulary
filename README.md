@@ -3,10 +3,10 @@ https://www.barbez.eu/
 # Vocabulary++
 Vocabulary++ helps you better study a foreign language. It is completely freeware and ad-free.
 
-# Binaries
+## Binaries
 https://www.microsoft.com/store/p/vocabulary/9nbbfrhb33g9
 
-# About
+## About
 
 Most likely, you want to practice some vocabulary when learning a new language. Vocabulary++ helps you better study the vocabulary of a foreign language. Test your knowledge with vocabulary lists you downloaded or created yourself. Vocabulary++ is easy-to-use, effective tool that will help you achieve the following: 
 
