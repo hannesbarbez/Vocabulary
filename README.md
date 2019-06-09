@@ -1,7 +1,7 @@
-https://www.barbez.eu/
-
 # Vocabulary++
 Vocabulary++ helps you better study a foreign language. It is completely freeware and ad-free.
+
+https://www.barbez.eu/
 
 ## Binaries
 https://microsoft.msafflnk.net/RDx1N
