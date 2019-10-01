@@ -15,7 +15,7 @@ namespace Vocabulary
     public partial class WindowMain : Window
     {
         #region Fields
-        private DictionaryDelegate wordlistDelegate;
+        private readonly DictionaryDelegate wordlistDelegate;
         private Dictionary dictionary;
         private List<int> indicesNotToUseAnymore;
         private string previousWord = "";
@@ -184,13 +184,13 @@ namespace Vocabulary
         private void BtnExam_Click(object sender, RoutedEventArgs e)
         {
 
-                if (this.dictionary != null && this.dictionary.Wordlist.Count > 0)
-                {
-                    tiExamTest.Visibility = Visibility.Visible;
-                    tcMainWindow.SelectedIndex = 1;
-                    this.indicesNotToUseAnymore = new List<int>();
-                    this.index = -1;
-                }
+            if (this.dictionary != null && this.dictionary.Wordlist.Count > 0)
+            {
+                tiExamTest.Visibility = Visibility.Visible;
+                tcMainWindow.SelectedIndex = 1;
+                this.indicesNotToUseAnymore = new List<int>();
+                this.index = -1;
+            }
         }
 
         private void BtnNextChallenge_Click(object sender, RoutedEventArgs e)
@@ -318,12 +318,12 @@ namespace Vocabulary
 
         private void LblAbout_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            HelperClass.RunExternalProcess(Executer.LAUNCHER, Executer.MSSTORELINK);
+            Executer.RateApp();
         }
 
         private void LblAbout_MouseDown(object sender, TouchEventArgs e)
         {
-            HelperClass.RunExternalProcess(Executer.LAUNCHER, Executer.MSSTORELINK);
+            Executer.RateApp();
         }
         #endregion
 

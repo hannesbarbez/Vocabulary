@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Barbez.eu")]
 [assembly: AssemblyProduct("Vocabulary++")]
-[assembly: AssemblyCopyright("©2018 Barbez.eu")]
+[assembly: AssemblyCopyright("©2019 Barbez.eu")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -3,7 +3,6 @@ using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Input;
-using Vocabulary.Logic;
 using Vocabulary.Logic.Generic;
 
 namespace Vocabulary
@@ -35,7 +34,7 @@ namespace Vocabulary
 
             if (description != null && copyright != null)
             {
-                this.Title = "About " + assemblyName.Name + ".";
+                Title = "About " + assemblyName.Name;
                 tbDescription.Text = description.Description;
                 tbVersion.Text = "Version " + version.Major + "." + version.Minor + "." + version.Build + "." + version.Revision;
                 tbCopyright.Text = "Copyright " + copyright.Copyright;
@@ -44,32 +43,32 @@ namespace Vocabulary
 
         private void HelpWindow_KeyDown(object sender, KeyEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void HelpWindow_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void LblAbout_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            HelperClass.RunExternalProcess(Executer.LAUNCHER, Executer.MSSTORELINK);
+            Executer.RateApp();
         }
 
         private void LblAbout_MouseDown(object sender, TouchEventArgs e)
         {
-            HelperClass.RunExternalProcess(Executer.LAUNCHER, Executer.MSSTORELINK);
+            Executer.RateApp();
         }
 
         private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            HelperClass.RunExternalProcess(Executer.LAUNCHER, Executer.BARBEZEULINK);
+            Executer.VisitSite();
         }
 
         private void TextBlock_KeyDown(object sender, KeyEventArgs e)
         {
-            HelperClass.RunExternalProcess(Executer.LAUNCHER, Executer.BARBEZEULINK);
+            Executer.VisitSite();
         }
         #endregion
     }
