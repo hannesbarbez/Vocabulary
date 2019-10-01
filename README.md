@@ -21,3 +21,6 @@ v1.7 (TBA)
 
 v1.6 (2017-06-18)
 - Initial release.
+
+## Technology
+WPF, C#, .NET
