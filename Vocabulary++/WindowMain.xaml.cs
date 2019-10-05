@@ -35,7 +35,7 @@ namespace Vocabulary
 
         private MessageBoxResult AskQuestions(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (this.datagrid.HasItems)
+            if (datagrid.HasItems)
             {
                 MessageBoxResult mbr = MessageBox.Show("Do you wish to save any changes made to this dictionary?", "Question", MessageBoxButton.YesNoCancel, MessageBoxImage.Question, MessageBoxResult.Yes);
                 switch (mbr)
@@ -55,7 +55,7 @@ namespace Vocabulary
 
         private MessageBoxResult AskQuestions()
         {
-            if (this.datagrid.HasItems)
+            if (datagrid.HasItems)
             {
                 MessageBoxResult mbr = MessageBox.Show("Do you wish to save any changes made to this dictionary?", "Question", MessageBoxButton.YesNoCancel, MessageBoxImage.Question, MessageBoxResult.Yes);
                 switch (mbr)
@@ -76,13 +76,13 @@ namespace Vocabulary
 
         private int GenerateRandomIndex()
         {
-            return new Random().Next(0, this.dictionary.Wordlist.Count);
+            return new Random().Next(0, dictionary.Wordlist.Count);
         }
 
         private bool IndexHasBeenUsed(int i)
         {
-            if (this.indicesNotToUseAnymore.Count > 0 && this.indicesNotToUseAnymore.Count() != this.dictionary.Wordlist.Count())
-                foreach (int j in this.indicesNotToUseAnymore)
+            if (indicesNotToUseAnymore.Count > 0 && indicesNotToUseAnymore.Count() != dictionary.Wordlist.Count())
+                foreach (int j in indicesNotToUseAnymore)
                     if (j == i)
                         return true;
             return false;
@@ -92,35 +92,35 @@ namespace Vocabulary
         {
             if ((bool)cbRandomize.IsChecked)
             {
-                this.index = GenerateRandomIndex();
+                index = GenerateRandomIndex();
 
                 while (IndexHasBeenUsed(this.index))
-                    this.index = GenerateRandomIndex();
+                    index = GenerateRandomIndex();
             }
-            else this.index++;
+            else index++;
 
             //show the correct answer to previous word
-            this.lblPreviousChallenge.Content = this.previousWord;
+            lblPreviousChallenge.Content = previousWord;
 
             //Don't give a new challenge when all has been asked
-            if (this.indicesNotToUseAnymore.Count != this.dictionary.Wordlist.Count)
+            if (indicesNotToUseAnymore.Count != dictionary.Wordlist.Count)
             {
-                //avoid the same challenge to be asked again later (todo: make this into a radiobutton option to maybe allow this)
-                this.indicesNotToUseAnymore.Add(this.index);
+                //avoid the same challenge to be asked again later // TODO: make this into a radiobutton option to maybe allow this in future.
+                indicesNotToUseAnymore.Add(index);
 
                 //select the word at the generated index
-                Word w = this.dictionary.Wordlist[this.index];
+                Word w = dictionary.Wordlist[index];
 
                 //question this word in the right direction
                 if ((bool)rb0to1.IsChecked)
                 {
                     lblCurrentChallenge.Content = w.Language0;
-                    this.previousWord = w.Language1;
+                    previousWord = w.Language1;
                 }
                 else
                 {
                     lblCurrentChallenge.Content = w.Language1;
-                    this.previousWord = w.Language0;
+                    previousWord = w.Language0;
                 }
             }
             else { lblCurrentChallenge.Content = ""; }
@@ -170,7 +170,7 @@ namespace Vocabulary
 
                 if (File.Exists(ofd.FileName))
                 {
-                    this.dictionary = HelperClass.Open(ofd.FileName);
+                    dictionary = HelperClass.Open(ofd.FileName);
                     DoStuffUponOpenFile();
                 }
             }
@@ -184,19 +184,19 @@ namespace Vocabulary
         private void BtnExam_Click(object sender, RoutedEventArgs e)
         {
 
-            if (this.dictionary != null && this.dictionary.Wordlist.Count > 0)
+            if (dictionary != null && dictionary.Wordlist.Count > 0)
             {
                 tiExamTest.Visibility = Visibility.Visible;
                 tcMainWindow.SelectedIndex = 1;
-                this.indicesNotToUseAnymore = new List<int>();
-                this.index = -1;
+                indicesNotToUseAnymore = new List<int>();
+                index = -1;
             }
         }
 
         private void BtnNextChallenge_Click(object sender, RoutedEventArgs e)
         {
-            this.datagrid.CommitEdit(DataGridEditingUnit.Row, true);
-            if (this.datagrid.Items.Count > 0)
+            datagrid.CommitEdit(DataGridEditingUnit.Row, true);
+            if (datagrid.Items.Count > 0)
                 ChooseNextWord();
         }
 
@@ -205,8 +205,8 @@ namespace Vocabulary
             MessageBoxResult mbr = AskQuestions();
             if (mbr != MessageBoxResult.Cancel)
             {
-                new WindowLanguages(this.wordlistDelegate).ShowDialog();
-                this.index = -1;
+                new WindowLanguages(wordlistDelegate).ShowDialog();
+                index = -1;
                 tiExamTest.Visibility = Visibility.Hidden;
                 VisualizeDictionary();
             }
@@ -216,33 +216,33 @@ namespace Vocabulary
         {
             if (this.dictionary != null)
             {
-                this.datagrid.ItemsSource = this.dictionary.Wordlist;
-                this.datagrid.Columns[0].Header = this.dictionary.Language0;
-                this.datagrid.Columns[1].Header = this.dictionary.Language1;
-                this.datagrid.Columns[0].MinWidth = 100;
-                this.datagrid.Columns[1].MinWidth = 100;
+                datagrid.ItemsSource = dictionary.Wordlist;
+                datagrid.Columns[0].Header = dictionary.Language0;
+                datagrid.Columns[1].Header = dictionary.Language1;
+                datagrid.Columns[0].MinWidth = 100;
+                datagrid.Columns[1].MinWidth = 100;
 
-                this.cbRandomize.IsChecked = this.dictionary.Randomize;
-                if (this.dictionary.Question0to1) rb0to1.IsChecked = true;
+                cbRandomize.IsChecked = dictionary.Randomize;
+                if (dictionary.Question0to1) rb0to1.IsChecked = true;
                 else rb1to0.IsChecked = true;
 
-                this.rb0to1.Content = (string)this.dictionary.Language0 + " to " + (string)this.dictionary.Language1;
-                this.rb1to0.Content = (string)this.dictionary.Language1 + " to " + (string)this.dictionary.Language0;
+                rb0to1.Content = dictionary.Language0 + " to " + dictionary.Language1;
+                rb1to0.Content = dictionary.Language1 + " to " + dictionary.Language0;
             }
         }
 
         private void DoStuffUponOpenFile()
         {
-            if (this.dictionary.Language0 == "" | this.dictionary.Language1 == "") this.dictionary = null;
+            if (dictionary.Language0 == "" | dictionary.Language1 == "") dictionary = null;
             tiExamTest.Visibility = Visibility.Hidden;
-            this.index = -1;
+            index = -1;
             VisualizeDictionary();
         }
 
         private void BtnSaveAs_Click(object sender, RoutedEventArgs e)
         {
-            this.datagrid.CommitEdit(DataGridEditingUnit.Row, true);
-            if (this.datagrid.Items.Count > 0 && !string.IsNullOrWhiteSpace(this.dictionary.Language0) && !string.IsNullOrWhiteSpace(this.dictionary.Language1))
+            datagrid.CommitEdit(DataGridEditingUnit.Row, true);
+            if (datagrid.Items.Count > 0 && !string.IsNullOrWhiteSpace(dictionary.Language0) && !string.IsNullOrWhiteSpace(dictionary.Language1))
             {
                 SaveFileDialog sfd = new SaveFileDialog
                 {
@@ -253,11 +253,9 @@ namespace Vocabulary
                 };
                 sfd.ShowDialog();
 
-                this.dictionary.Randomize = (bool)this.cbRandomize.IsChecked;
-                if ((bool)rb0to1.IsChecked) this.dictionary.Question0to1 = true;
-                else this.dictionary.Question0to1 = false;
-
-                HelperClass.Save(sfd.FileName, this.dictionary);
+                dictionary.Randomize = (bool)cbRandomize.IsChecked;
+                dictionary.Question0to1 = (bool)rb0to1.IsChecked;
+                HelperClass.Save(sfd.FileName, dictionary);
             }
         }
 
@@ -265,9 +263,7 @@ namespace Vocabulary
         {
             if (e.AddedCells.Count == 2)
             {
-                int currentRowIndex = this.datagrid.ItemContainerGenerator
-                .IndexFromContainer(this.datagrid.ItemContainerGenerator.ContainerFromItem(this.datagrid.CurrentItem));
-
+                int currentRowIndex = datagrid.ItemContainerGenerator.IndexFromContainer(datagrid.ItemContainerGenerator.ContainerFromItem(datagrid.CurrentItem));
                 if (currentRowIndex > 0)
                 {
                     if ((GetCell(currentRowIndex - 1, 0).Content as TextBlock).Text == "")
@@ -293,14 +289,14 @@ namespace Vocabulary
 
         private void CbRandomize_Checked(object sender, RoutedEventArgs e)
         {
-            if (this.dictionary != null)
-                this.dictionary.Randomize = true;
+            if (dictionary != null)
+                dictionary.Randomize = true;
         }
 
         private void CbRandomize_Unchecked(object sender, RoutedEventArgs e)
         {
-            if (this.dictionary != null)
-                this.dictionary.Randomize = false;
+            if (dictionary != null)
+                dictionary.Randomize = false;
         }
 
         private void TukajWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -315,32 +311,19 @@ namespace Vocabulary
             BtnExam_Click(null, null);
             BtnNextChallenge_Click(null, null);
         }
-
-        private void LblAbout_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Executer.RateApp();
-        }
-
-        private void LblAbout_MouseDown(object sender, TouchEventArgs e)
-        {
-            Executer.RateApp();
-        }
         #endregion
 
         #region Constructors
         public WindowMain()
         {
             InitializeComponent();
-
-            this.wordlistDelegate = new DictionaryDelegate(this.SetDictionary);
-
+            wordlistDelegate = new DictionaryDelegate(SetDictionary);
             if (App.path != null)
                 if (!string.IsNullOrEmpty(App.path) | !string.IsNullOrWhiteSpace(App.path))
                 {
-                    this.dictionary = HelperClass.Open(App.path);
+                    dictionary = HelperClass.Open(App.path);
                     DoStuffUponOpenFile();
                 }
-
         }
         #endregion
     }

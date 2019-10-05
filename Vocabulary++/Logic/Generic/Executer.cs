@@ -6,7 +6,7 @@ namespace Vocabulary.Logic.Generic
     internal static class Executer
     {
         #region Constants
-        internal static string MSSTORERATINGURL = "ms-windows-store://review/?productid=9nbbfrhb33g9", BARBEZEULINK = "https://barbez.eu", LAUNCHER = "explorer.exe";
+        private static string MSSTORERATINGURL = "ms-windows-store://review/?productid=9nbbfrhb33g9", BARBEZEULINK = "https://barbez.eu", GITHUBLINK = "https://github.com/hannesbarbez/Vocabulary";
         #endregion
 
         internal static T GetVisualChild<T>(Visual parent) where T : Visual
@@ -37,6 +37,11 @@ namespace Vocabulary.Logic.Generic
         internal static void VisitSite()
         {
             Process.Start(BARBEZEULINK);
+        }
+
+        internal static void VisitGithub()
+        {
+            Process.Start(GITHUBLINK);
         }
     }
 }

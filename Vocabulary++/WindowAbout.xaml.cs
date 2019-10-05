@@ -28,17 +28,11 @@ namespace Vocabulary
             Assembly assembly = Assembly.GetExecutingAssembly();
             AssemblyName assemblyName = assembly.GetName();
             Version version = assemblyName.Version;
-
             var description = assembly.GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false).OfType<AssemblyDescriptionAttribute>().FirstOrDefault();
-            var copyright = assembly.GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false).OfType<AssemblyCopyrightAttribute>().FirstOrDefault();
-
-            if (description != null && copyright != null)
-            {
-                Title = "About " + assemblyName.Name;
-                tbDescription.Text = description.Description;
-                tbVersion.Text = "Version " + version.Major + "." + version.Minor + "." + version.Build + "." + version.Revision;
-                tbCopyright.Text = "Copyright " + copyright.Copyright;
-            }
+            Title = "About " + assemblyName.Name;
+            tbDescription.Text = description.Description;
+            tbVersion.Text = "Version " + version.Major + "." + version.Minor + "." + version.Build + "." + version.Revision;
+            tbCopyright.Text = $"©2017-{DateTime.Now.Year} Barbez.eu.";
         }
 
         private void HelpWindow_KeyDown(object sender, KeyEventArgs e)
@@ -50,26 +44,16 @@ namespace Vocabulary
         {
             Close();
         }
-
-        private void LblAbout_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Executer.RateApp();
-        }
-
-        private void LblAbout_MouseDown(object sender, TouchEventArgs e)
-        {
-            Executer.RateApp();
-        }
-
-        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Executer.VisitSite();
-        }
-
-        private void TextBlock_KeyDown(object sender, KeyEventArgs e)
-        {
-            Executer.VisitSite();
-        }
         #endregion
+
+        private void BtnRate_Click(object sender, RoutedEventArgs e)
+        {
+            Executer.RateApp();
+        }
+
+        private void BtnGithub_Click(object sender, RoutedEventArgs e)
+        {
+            Executer.VisitGithub();
+        }
     }
 }
