@@ -13,3 +13,14 @@ Most likely, you want to practice some vocabulary when learning a new language. 
 - Define and input a vocabulary list or open a previously saved one; 
 - Interrogate yourself from native to new language – and vice-versa using the exam/test function; 
 - Randomize a test for added difficulty. Vocabulary++ word lists are saved in XML format (with extension *.vocab), and allows for maximal potential compatitibility with other apps. 
+
+## Versions
+v1.7 (TBA)
+- Minor cosmetic tweaks;
+- Couple of minor fixes.
+
+v1.6 (2017-06-18)
+- Initial release.
+
+## Technology
+WPF, C#, .NET
