@@ -1,7 +1,7 @@
 # Vocabulary++
 Vocabulary++ helps you better study a foreign language. It is completely freeware and ad-free.
 
-https://www.barbez.eu/
+www.barbez.eu
 
 ## Binaries
 https://www.microsoft.com/p/woordenschat/9nbbfrhb33g9
