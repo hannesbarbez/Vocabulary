@@ -4,7 +4,7 @@ Vocabulary++ helps you better study a foreign language. It is completely freewar
 https://www.barbez.eu/
 
 ## Binaries
-https://microsoft.msafflnk.net/RDx1N
+https://www.microsoft.com/p/woordenschat/9nbbfrhb33g9
 
 ## About
 
