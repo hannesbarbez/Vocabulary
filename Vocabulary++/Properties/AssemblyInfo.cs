@@ -1,4 +1,7 @@
-﻿using System.Reflection;
+﻿// Copyright (c) Hannes Barbez. All rights reserved.
+// Licensed under the GNU General Public License v3.0
+
+using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -12,7 +15,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Barbez.eu")]
 [assembly: AssemblyProduct("Vocabulary++")]
-[assembly: AssemblyCopyright("©2019 Barbez.eu")]
+[assembly: AssemblyCopyright("©2020 Barbez.eu")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

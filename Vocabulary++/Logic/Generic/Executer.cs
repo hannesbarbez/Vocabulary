@@ -1,4 +1,7 @@
-﻿using System.Diagnostics;
+﻿// Copyright (c) Hannes Barbez. All rights reserved.
+// Licensed under the GNU General Public License v3.0
+
+using System.Diagnostics;
 using System.Windows.Media;
 
 namespace Vocabulary.Logic.Generic
