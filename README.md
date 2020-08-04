@@ -1,5 +1,6 @@
 # Vocabulary++
 Vocabulary++ helps you better study a foreign language. It is completely freeware and ad-free.
+
 ![Screenshot of Vocabulary++ in "exam" mode](https://barbez.eu/wp-content/uploads/2020/02/200228-Vocabulary-closeup.png)
 
 ## Binaries
