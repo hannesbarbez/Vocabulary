@@ -1,8 +1,6 @@
 # Vocabulary++
-![Screenshot of Vocabulary++ in "exam" mode](https://barbez.eu/wp-content/uploads/2020/02/200228-Vocabulary-closeup.png)
 Vocabulary++ helps you better study a foreign language. It is completely freeware and ad-free.
-
-www.barbez.eu
+![Screenshot of Vocabulary++ in "exam" mode](https://barbez.eu/wp-content/uploads/2020/02/200228-Vocabulary-closeup.png)
 
 ## Binaries
 https://www.microsoft.com/p/woordenschat/9nbbfrhb33g9
@@ -25,3 +23,6 @@ v1.6 (2017-06-18)
 
 ## Technology
 WPF, C#, .NET
+
+## Author
+www.barbez.eu
